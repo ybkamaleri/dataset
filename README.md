@@ -8,9 +8,17 @@ Data sets for testing functions or analysis
 You can either download these data sets directly or read the GitHub raw
 version of csv file in R. Raw version of this csv file looks like [this](https://raw.githubusercontent.com/ybkamaleri/dataset/master/gdata.csv)
 
-You have two options to read the file directly in R:
+You have different options to read the file directly in R:
 
-## **readr** package
+## data.table package
+`fread` function is needed to read the csv file in R. This is my personal preference and often faster :-)
+
+``` R
+library("data.table")
+data2 <- fread("https://raw.githubusercontent.com/ybkamaleri/dataset/master/gdata.csv")
+```
+
+## readr package
 `read_csv` function is used to read the raw csv file directly
 
 ``` R
