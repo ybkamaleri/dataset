@@ -1,5 +1,5 @@
-# dataset
-Data sets for testing function or analysis
+# Data sets
+Data sets for testing functions or analysis
 
 - **gdata.rds** consists of different data from all states in USA
 - **gdata.csv** is csv verion of gdata
@@ -8,7 +8,7 @@ Data sets for testing function or analysis
 You can either download these data sets directly or read the GitHub raw
 version of csv file in R. Raw version of this csv file looks like [this](https://raw.githubusercontent.com/ybkamaleri/dataset/master/gdata.csv)
 
-You have to option to read the file directly in R:
+You have two options to read the file directly in R:
 
 ## **readr** package
 `read_csv` function is used to read the raw csv file directly
@@ -19,7 +19,7 @@ data <- readr::read_csv("https://raw.githubusercontent.com/ybkamaleri/dataset/ma
 ```
 ## RCurl package
 
-`getURL` function is need to get the URL of the raw csv file before using the base function `read.csv`
+`getURL` function is needed to get the URL of the raw csv file before using the base function `read.csv`
 
 ``` R
 library(RCurl)
