@@ -6,7 +6,7 @@ Data sets for testing function or analysis
 - **data.RData** has different data sets and subsets from gdata.rds
 
 You can either download these data sets directly or read the GitHub raw
-version of csv file in R. Raw version of this csv file looks like [gdata.csv](https://raw.githubusercontent.com/ybkamaleri/dataset/master/gdata.csv)
+version of csv file in R. Raw version of this csv file looks like [this](https://raw.githubusercontent.com/ybkamaleri/dataset/master/gdata.csv)
 
 You have to option to read the file directly in R:
 
@@ -15,7 +15,7 @@ You have to option to read the file directly in R:
 
 ``` R
 library("readr")
-data1 <- readr::read_csv("https://raw.githubusercontent.com/ybkamaleri/dataset/master/gdata.csv")
+data <- readr::read_csv("https://raw.githubusercontent.com/ybkamaleri/dataset/master/gdata.csv")
 ```
 ## RCurl package
 
@@ -23,6 +23,6 @@ data1 <- readr::read_csv("https://raw.githubusercontent.com/ybkamaleri/dataset/m
 
 ``` R
 library(RCurl)
-x <- getURL("https://raw.githubusercontent.com/ybkamaleri/dataset/master/gdata.csv")
-y <- read.csv(text = x)
+dataURL <- getURL("https://raw.githubusercontent.com/ybkamaleri/dataset/master/gdata.csv")
+data <- read.csv(text = dataURL)
 ```
